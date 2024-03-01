@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="MauiAppHafta3.MauiPageGrid"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:MauiAppHafta3"
+    mc:Ignorable="d"
+    Padding="10" >
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="VerticalOptions"
+                    Value="Center"/>
+            <Setter Property="HorizontalOptions"
+                    Value="End"/>
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto, Auto,Auto,Auto,Auto,Auto,*"
+              ColumnDefinitions="Auto,*,*"
+              RowSpacing="5"
+              ColumnSpacing="5">
+
+            <Label Grid.Column="0" Grid.Row="0" Text="Adı:"/>
+            <Entry Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2"/>
+
+            <Label Grid.Column="0" Grid.Row="1" Text="Soyadı:"/>
+            <Entry Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2"/>
+
+            <Label Grid.Column="0" Grid.Row="2" Text="Mail:"/>
+            <Entry Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2"/>
+
+            <Label Grid.Column="0" Grid.Row="3" Text="Telefon:"/>
+            <Entry Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2"/>
+
+            <Button Grid.Column="1" Grid.Row="4" Text="Tamam"/>
+            <Button Grid.Column="2" Grid.Row="4" Text="İptal"/>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

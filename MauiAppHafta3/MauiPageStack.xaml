@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="MauiAppHafta3.MauiPageStack"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:MauiAppHafta3"
+    mc:Ignorable="d">
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontSize"
+                    Value="15"/>
+        </Style>
+        <Style TargetType="Entry">
+            <Setter Property="BackgroundColor" 
+                    Value="Yellow"/>
+            <Setter Property="PlaceholderColor"
+                    Value="LightBlue"/>
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" Margin="10">
+            
+            <StackLayout 
+                IsVisible="False"
+                x:Name="sSignin"
+                Spacing="10">
+                <Label Text="Hesab oluştur:"/>
+                <Entry Placeholder="e-Mail"/>
+                <Entry Placeholder="Password"/>
+
+                <Button Text="Kaydet"/>
+                <Button Text="Hesabım Var" 
+                        BackgroundColor="Transparent"
+                        TextColor="Black"
+                        Clicked="Button1_Clicked"/>
+
+            </StackLayout>
+
+            <StackLayout 
+                x:Name="sLogin"
+                Spacing="10"
+                         IsVisible="true">
+                <Label Text="Oturum Aç:"/>
+                <Entry Placeholder="e-Mail"/>
+                <Entry Placeholder="Password"/>
+
+                <Button Text="Giriş"/>
+                <Button Text="Kaydol" 
+                        BackgroundColor="Transparent"
+                        TextColor="Black"
+                        Clicked="Button1_Clicked"/>
+
+
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

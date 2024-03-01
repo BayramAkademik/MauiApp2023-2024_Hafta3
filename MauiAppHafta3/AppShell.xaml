@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiAppHafta3.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiAppHafta3"
+    Shell.FlyoutBehavior="Flyout"
+    Title="MauiAppHafta3">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+    <ShellContent
+        Title="Stack"
+        ContentTemplate="{DataTemplate local:MauiPageStack}"
+        Route="MauiPageStack" />
+
+    <ShellContent
+        Title="Grid"
+        ContentTemplate="{DataTemplate local:MauiPageGrid}"
+        Route="MauiPageGrid" />
+
+    <ShellContent
+        Title="Hesap Makinesi"
+        ContentTemplate="{DataTemplate local:MauiPage1}"
+        Route="MauiPage1" />
+
+    <ShellContent
+        Title="Absolute"
+        ContentTemplate="{DataTemplate local:MauiPageAbsolute}"
+        Route="MauiPageAbsolute" />
+
+    <ShellContent
+        Title="Flex"
+        ContentTemplate="{DataTemplate local:MauiPageFlex}"
+        Route="MauiPageFlex" />
+    
+    <ShellContent
+        Title="MauiPage2"
+        ContentTemplate="{DataTemplate local:MauiPage2}"
+        Route="MauiPage2" />
+
+</Shell>

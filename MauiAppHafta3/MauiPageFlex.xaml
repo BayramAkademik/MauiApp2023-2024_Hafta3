@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="MauiAppHafta3.MauiPageFlex"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:MauiAppHafta3"
+    mc:Ignorable="d">
+    <ContentPage.Content>
+        <FlexLayout Wrap="Wrap"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Direction="Row"
+                    >
+            <BoxView WidthRequest="100" HeightRequest="100" Background="Gray"/>
+            <BoxView WidthRequest="100" HeightRequest="100" Background="Red"/>
+            <BoxView WidthRequest="100" HeightRequest="100" Background="Blue"/>
+            <BoxView WidthRequest="100" HeightRequest="100" Background="Yellow"/>
+            <BoxView WidthRequest="100" HeightRequest="100" Background="Orange"/>
+            <BoxView WidthRequest="100" HeightRequest="100" Background="Green"/>
+        </FlexLayout>
+    </ContentPage.Content>
+</ContentPage>

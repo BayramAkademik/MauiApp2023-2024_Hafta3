@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<TabbedPage
+    x:Class="MauiAppHafta3.MauiPageTab"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:MauiAppHafta3"
+    mc:Ignorable="d">
+
+    <ContentPage BackgroundColor="Gray" Title="Gri">
+        
+    </ContentPage>
+    <ContentPage BackgroundColor="Yellow" Title="Sarı">
+        
+    </ContentPage>
+
+    <ContentPage BackgroundColor="Green"  Title="Yeşil">
+        
+    </ContentPage>
+</TabbedPage>

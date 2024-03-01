@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="MauiAppHafta3.MauiPage2"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:MauiAppHafta3"
+    mc:Ignorable="d" Padding="10">
+    <ContentPage.Content>
+        <StackLayout>
+            <SearchBar Placeholder="Arama ..." />
+            
+            <Grid ColumnDefinitions="*,Auto"
+                  RowDefinitions="Auto,Auto,Auto,Auto">
+                
+                <Label Text="Bilmem ne ayarı" VerticalOptions="Center"/>
+                <Switch IsToggled="True" Grid.Column="1"
+                OnColor="Green"
+                ThumbColor="Red" 
+                 MinimumWidthRequest="0"/>
+
+                <Label Text="Bilmem ne ayarı 2" Grid.Row="1" VerticalOptions="Center" />
+                <Switch IsToggled="True" Grid.Column="1" Grid.Row="1"
+                OnColor="Green"
+                ThumbColor="Red" MinimumWidthRequest="0"/>
+            </Grid>
+
+            <Slider Minimum="10" Maximum="100" Value="30"
+                    MinimumTrackColor="Green"
+                    MaximumTrackColor="Red"/>
+            
+            
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
